@@ -1,4 +1,8 @@
-let starEl = document.querySelectorAll(".fa-star")
+const starEl = document.querySelectorAll(".fa-star")
+const emojiEl = document.querySelectorAll(".fa-regular")
+const colorsArray =["red","orange","blue","lightgreen","green"]
+
+updateRatings(0)
 
 starEl.forEach((starEl,index) => {
     starEl.addEventListener("click", ()=>{
@@ -15,4 +19,10 @@ function updateRatings(index){
         };
             
         })
+
+        emojiEl.forEach(emojisEl=>{
+            emojisEl.style.transform = `translate(-${index * 50}px)`;
+            emojisEl.style.color = colorsArray[index]
+        })
+
     }

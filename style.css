@@ -30,6 +30,7 @@ body{
 .fa-regular{
     margin: 1px;
     transform: translateX(0px);
+    transition: transform 0.2s;
 }
 
 .ratings{
