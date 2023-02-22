@@ -12,7 +12,7 @@ function updateRatings(index){
             starEl.classList.add("active")
         }else{
             starEl.classList.remove("active")
-        }
+        };
             
         })
     }
